@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+}
+
+a {
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.link {
+    color: aliceblue;
+}
+
+.active {
+    box-shadow: 0 5px #ffffff68;
+    text-transform: all 0.5s ease-out;
+
+    &:hover {
+        box-shadow: 0 5px #ffffffb4;
+    }
+}

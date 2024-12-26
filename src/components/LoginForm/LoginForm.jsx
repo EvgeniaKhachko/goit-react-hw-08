@@ -3,7 +3,6 @@ import s from "./LoginForm.module.css";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/auth/operations";
 import * as Yup from "yup";
-import {} from "react-icons/lu";
 
 const LoginForm = () => {
   const dispatch = useDispatch();
@@ -20,24 +19,35 @@ const LoginForm = () => {
       .required("Required"),
   });
   return (
-    <div className={s.forma}>
+    <div className={s.wrapper}>
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={loginValidationSchema}
         onSubmit={handleSubmit}
       >
-        <Form>
-          <label className={s.label}>Email</label>
-          <Field type="email" name="email" />
+        <Form className={s.form}>
+          <Field
+            className={s.field}
+            type="email"
+            name="email"
+            placeholder="Enter email"
+            required
+          />
           <ErrorMessage name="email" component="span" className={s.error} />
 
-          <label className={s.label}>Password</label>
-          <Field type="password" name="password" />
+          <Field
+            className={s.field}
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            required
+          />
           <ErrorMessage name="password" component="span" className={s.error} />
-
-          <button className={s.button} type="submit">
-            Login
-          </button>
+          <div className={s.buttonBox}>
+            <button className={s.button} type="submit">
+              <span>Login</span>
+            </button>
+          </div>
         </Form>
       </Formik>
     </div>

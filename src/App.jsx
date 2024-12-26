@@ -1,6 +1,7 @@
 import { useEffect, lazy } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "modern-normalize";
+
 import Layout from "./Layout";
 import { selectIsRefreshing } from "./redux/auth/selectors";
 import PrivateRoute from "./PrivateRoute";

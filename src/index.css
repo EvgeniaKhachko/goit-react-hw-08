@@ -13,10 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: cornflowerblue;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  /* color: #646cff;
+  text-decoration: inherit; */
 }
 
 a:hover {
@@ -29,6 +33,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
 }
 
 h1 {

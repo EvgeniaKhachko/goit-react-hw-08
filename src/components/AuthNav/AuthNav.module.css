@@ -8,18 +8,28 @@
 
 a {
     padding: 5px 10px;
-    text-transform: uppercase;
+
 }
 
 .link {
-    color: aliceblue;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 20px;
+    color: rgb(25, 118, 210);
 }
 
-.active {
-    box-shadow: 0 5px #ffffff68;
-    text-transform: all 0.5s ease-out;
-
-    &:hover {
-        box-shadow: 0 5px #ffffffb4;
-    }
+.link :active,
+:hover,
+:focus {
+    color: rebeccapurple;
 }
+
+/* .buildLinkClass {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 20px;
+    color: rgb(25, 118, 210);
+} */
+s.registerLog {}

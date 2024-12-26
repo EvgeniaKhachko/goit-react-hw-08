@@ -1,5 +1,5 @@
 import { Field, Form, Formik } from "formik";
-import css from "./RegistrationForm.module.css";
+import s from "./RegistrationForm.module.css";
 import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 
@@ -25,32 +25,32 @@ const RegistrationForm = () => {
     password: "",
   };
   return (
-    <div className={css.wrapper}>
+    <div className={s.wrapper}>
       <Formik onSubmit={handleSubmit} initialValues={initialValues}>
-        <Form className={css.form}>
+        <Form className={s.form}>
           <Field
-            className={css.field}
+            className={s.field}
             name="name"
             type="text"
             placeholder="Enter name"
             required
           />
           <Field
-            className={css.field}
+            className={s.field}
             name="email"
             type="email"
             placeholder="Enter email"
             required
           />
           <Field
-            className={css.field}
+            className={s.field}
             name="password"
             type="password"
             placeholder="Enter password"
             required
           />
-          <div className={css.buttonBox}>
-            <button className={css.button} type="submit">
+          <div className={s.buttonBox}>
+            <button className={s.button} type="submit">
               <span>Register</span>
             </button>
           </div>

@@ -24,6 +24,15 @@ const App = () => {
     dispatch(refreshUser());
   }, [dispatch]);
 
+  useEffect(() => {
+    document.body.style.background =
+      "radial-gradient(circle, rgba(165, 252, 70, 1) 0%, rgba(63, 94, 251, 0.7511379551820728) 100%)";
+
+    return () => {
+      document.body.style.backgroundColor = "transparent";
+    };
+  });
+
   return isRefreshing ? (
     <b>Refreshing user</b>
   ) : (

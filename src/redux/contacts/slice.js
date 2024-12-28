@@ -5,7 +5,7 @@ import { logout } from "../auth/operations";
 const slice = createSlice({
     name: "contacts",
     initialState: {
-        items: [],
+        items: [],          
         loading: false,
         error: null,
     },
